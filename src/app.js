@@ -6,13 +6,12 @@ import { config } from "dotenv";
 
 config({ path: ".env" });
 const app = express();
-const { PORT } = process.env;
-const DB = 'mongodb+srv://root:root@mallucoder.fhzzu.mongodb.net/nodework?retryWrites=true&w=majority'
+const { PORT, DBURL } = process.env;
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }
-mongoose.connect(DB, options)
+mongoose.connect(DBURL, options)
     .then(() => console.log('connection successfuly'))
     .catch(err => console.log("connection failed", err))
 
