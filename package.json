@@ -1,0 +1,35 @@
+{
+  "name": "node-express-mongo-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon --exec babel-node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashvg007/node-express-mongo-learning.git"
+  },
+  "keywords": [],
+  "author": "akashvg007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashvg007/node-express-mongo-learning/issues"
+  },
+  "homepage": "https://github.com/akashvg007/node-express-mongo-learning#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
